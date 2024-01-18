@@ -43,7 +43,7 @@ $result = $connec->query($sql);
 <body>
     <!-- En-tête de la page avec deux images (src manquants) -->
     <header class="main_hero">
-        <img class="main-hero-img">
+        <img class="main-hero-img" >
         <img class="Titre-site">
     </header>
     <!-- Section principale de la page -->

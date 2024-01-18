@@ -21,12 +21,38 @@ h3, h4, h5, h6 {
 
 /* Styles généraux pour le corps de la page */
 body {
-    background-color: var(--primary);  /* Utilisation de la variable pour la couleur de fond */
     background-image: url(../images/d0c4ba231a48e44c22858d450a944963.png);  /* Image de fond */
-    background-size: cover;  /* Redimensionnement de l'image de fond pour couvrir tout l'écran */
     background-position: unset;  /* Position de l'image de fond */
-    width: 100%;
     margin: 0;
+}
+
+.main_hero{
+    width: 100vw; /* 100% de la largeur de la fenêtre */
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+}
+
+/* Styles pour l'image principale de l'en-tête */
+.main-hero-img {
+    /* Image de fond pour l'image principale de l'en-tête */
+    background: url(../images/992db1c0-3e23-4448-9208-298295019a93.png) no-repeat center center fixed;
+    width: 100vw; /* 100% de la largeur de la fenêtre */
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    position: absolute; /* Fixe l'image à l'écran */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Pour s'assurer que le contenu défile sur l'image */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+    background-position: center; /* Centre l'image horizontalement */
+}
+
+/* Styles pour le titre du site (ajouter si nécessaire) */
+.Titre-site {
+    /* Styles pour le titre du site */
+    background: url(../images/d0c4ba231a48e44c22858d450a944963.png);
+    width: 473px;
+    height: 147px;
+    z-index: 1; /* Assure que le titre est au-dessus de l'image */
 }
 
 /* Styles pour la section principale de la page */
@@ -35,20 +61,8 @@ body {
     gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 369px;  /* Marge supérieure */
+    background-size: cover ;
 }
-
-/* Styles pour l'image principale de l'en-tête */
-.main-hero-img {
-    background: url(../images/992db1c0-3e23-4448-9208-298295019a93.png);
-    /* Image de fond pour l'image principale de l'en-tête */
-}
-
-/* Styles pour le titre du site (ajouter si nécessaire) */
-.Titre-site {
-    /* Styles pour le titre du site */
-}
-
 /* Styles généraux pour la section des Pokémon */
 .pokemon {
     /* Styles pour la section des Pokémon */
@@ -56,14 +70,9 @@ body {
 
 /* Styles pour la carte de chaque Pokémon */
 .carte {
-    display: flex;
-    flex-direction: inherit;
-    flex-wrap: wrap;
+    display: block;
     border: 7px solid rgba(0, 0, 0, .3);
-    width: 224px;
-    height: 387px;
     background-color: var(--primary);
-    align-items: center;
     border-radius: 16px;
     font-size: xx-small;
     padding: 14px;
