@@ -1,0 +1,148 @@
+/* Définition des variables CSS */
+:root {
+    --primary: #e3d220;  /* Couleur principale */
+    --secondary: ##8f8f8f;  /* Couleur secondaire */
+    --gray-darker: #2C3E50;  /* Nuance de gris plus foncée */
+    --primary-font: 'Roboto', sans-serif;  /* Police principale */
+    --secondary-font: 'Pontiac', sans-serif;  /* Police secondaire */
+}
+
+/* Styles pour les balises h1 */
+h1 {
+    text-align: center;
+}
+
+/* Styles pour les balises h3, h4, h5, h6 */
+h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Styles généraux pour le corps de la page */
+body {
+    background-color: var(--primary);  /* Utilisation de la variable pour la couleur de fond */
+    background-image: url(../images/d0c4ba231a48e44c22858d450a944963.png);  /* Image de fond */
+    background-size: cover;  /* Redimensionnement de l'image de fond pour couvrir tout l'écran */
+    background-position: unset;  /* Position de l'image de fond */
+    width: 100%;
+    margin: 0;
+}
+
+/* Styles pour la section principale de la page */
+.main_main {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 369px;  /* Marge supérieure */
+}
+
+/* Styles pour l'image principale de l'en-tête */
+.main-hero-img {
+    background: url(../images/992db1c0-3e23-4448-9208-298295019a93.png);
+    /* Image de fond pour l'image principale de l'en-tête */
+}
+
+/* Styles pour le titre du site (ajouter si nécessaire) */
+.Titre-site {
+    /* Styles pour le titre du site */
+}
+
+/* Styles généraux pour la section des Pokémon */
+.pokemon {
+    /* Styles pour la section des Pokémon */
+}
+
+/* Styles pour la carte de chaque Pokémon */
+.carte {
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    border: 7px solid rgba(0, 0, 0, .3);
+    width: 224px;
+    height: 387px;
+    background-color: var(--primary);
+    align-items: center;
+    border-radius: 16px;
+    font-size: xx-small;
+    padding: 14px;
+}
+
+/* Styles pour le nom du Pokémon */
+.nom-poke {
+    margin: -7.79px 0 0 6px;
+}
+
+/* Styles pour le bouton "BASE" */
+.button {
+    border-radius: 27px 1px 19px 10px;
+    width: 40px;
+    height: 15px;
+    font-size: smaller;
+}
+
+/* Styles pour le conteneur des points de vie (PV) */
+.pv-container {
+    font-size: xx-small;
+}
+
+/* Styles pour l'image du Pokémon */
+.image {
+    border: 2px solid rgba(0, 0, 0, .3);
+    height: 182px;
+    width: 212px;
+    border-radius: 8px;
+    margin: 1px 0px 0 0px;
+}
+
+/* Styles pour le conteneur d'image avec effet "shiny" */
+.img_bg {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles pour l'effet "shiny" de l'image */
+.shiny-effect {
+    position: relative;
+    overflow: hidden;
+    width: 212px;
+    height: 187px;
+    border-radius: 12px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    bottom: 0px;
+}
+
+.shiny-effect::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 70%);
+    transform: rotate(-30deg);
+    opacity: 0.5;
+}
+
+/* Styles pour les informations de la carte du Pokémon */
+.info-carte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Styles pour le conteneur de texte */
+.text-container {
+    border: 2px solid rgba(0, 0, 0, .3);
+    height: 104px;
+    width: 203px;
+    font-size: 15px;
+    font: 15px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
